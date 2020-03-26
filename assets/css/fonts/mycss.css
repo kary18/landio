@@ -1,0 +1,148 @@
+/**
+  layout only
+**/
+.h-box {
+    float: left;
+    margin-right: 30px;
+  }
+  .clear {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+  }
+  /**
+    progress starts from here
+  **/
+  #prg1{
+      background-color: red;
+  }
+  
+  .round-progress {
+    position: relative;
+    transform: rotate(45deg);
+    border-bottom: 100px solid lightgray;
+    border-left: 100px solid lightgray;
+    border-right: 100px solid lightgray;
+    border-top: 100px solid lightgray;
+  }
+  .round-progress > div {
+    position: absolute;
+    content: "";
+    top: -100px;
+    left:-100px;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 100px solid transparent;
+  }
+  .round-progress,
+  .round-progress > div {
+    height:0;
+    width:0;
+    border-radius: 100px;
+  }
+  
+  .round-progress.p25,
+  .round-progress.p50,
+  .round-progress.p75,
+  .round-progress.p100 {
+    border-top-color: darkgray;
+  }
+  
+  .round-progress.p25 > div,
+  .round-progress.p50 > div,
+  .round-progress.p75 > div {
+    border-top-color: lightgray;
+  }
+  .round-progress.p50,
+  .round-progress.p75,
+  .round-progress.p100,
+  .round-progress.p100 > div {
+    border-right-color: darkgray;
+  }
+  .round-progress.p75,
+  .round-progress.p100,
+  .round-progress.p100 > div {
+    border-bottom-color: darkgray;
+  }
+  
+  .round-progress.p100 > div {
+    border-left-color: darkgray;
+  }
+  
+  /*=-=-=-=-=-=-=-=- Green -=-=-=-=-=-=-=-=*/
+  
+  .round-progress.green {
+    border-bottom-color: lightgreen;
+    border-left-color: lightgreen;
+    border-right-color: lightgreen;
+    border-top-color: lightgreen;
+  }
+  
+  .round-progress.p25.green,
+  .round-progress.p50.green,
+  .round-progress.p75.green,
+  .round-progress.p100.green {
+    border-top-color: green;
+  }
+  
+  .round-progress.p25.green > div,
+  .round-progress.p50.green > div,
+  .round-progress.p75.green > div {
+    border-top-color: lightgreen;
+  }
+  .round-progress.p50.green,
+  .round-progress.p75.green,
+  .round-progress.p100.green,
+  .round-progress.p100.green > div {
+    border-right-color: green;
+  }
+  .round-progress.p75.green,
+  .round-progress.p100.green,
+  .round-progress.p100.green > div {
+    border-bottom-color: green;
+  }
+  
+  .round-progress.p100.green > div {
+    border-left-color: green;
+  }
+  .round-progress.p25.green {
+    border-top-color: green;
+  }
+  
+  /*=-=-=-=-=-=-=-=- Blue -=-=-=-=-=-=-=-=*/
+  
+  .round-progress.blue {
+    border-color: #ADD8E6;
+  }
+  
+  .round-progress.p25.blue,
+  .round-progress.p50.blue,
+  .round-progress.p75.blue,
+  .round-progress.p100.blue {
+    border-top-color: #0099CC;
+  }
+  
+  .round-progress.p25.blue > div,
+  .round-progress.p50.blue > div,
+  .round-progress.p75.blue > div {
+    border-top-color: #ADD8E6;
+  }
+  .round-progress.p50.blue,
+  .round-progress.p75.blue,
+  .round-progress.p100.blue,
+  .round-progress.p100.blue > div {
+    border-right-color: #0099CC;
+  }
+  .round-progress.p75.blue,
+  .round-progress.p100.blue,
+  .round-progress.p100.blue > div {
+    border-bottom-color: #0099CC;
+  }
+  
+  .round-progress.p100.blue > div {
+    border-left-color: #0099CC;
+  }
+  .round-progress.p25.blue {
+    border-top-color: #0099CC;
+  }
