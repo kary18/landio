@@ -24,10 +24,11 @@
     <link rel="manifest" href="./assets/img/favicon/manifest.json">
     <link rel="shortcut icon" href="./assets/img/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#663fb5">
-    <meta name="msapplication-TileImage" content="./assets/img/favicon/mstile-144x144.png">
+    <meta name="msapplication-TileImage" content="./assets/img/pencil.png">
     <meta name="msapplication-config" content="./assets/img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#663fb5">
     <link rel="stylesheet" href="./assets/css/landio.min.css">
+    <link rel="stylesheet" href="./assets/css/mycss.css">
   </head>
 
   <body>
@@ -108,20 +109,48 @@
     <!-- Hero Section
     ================================================== -->
 
-    <header class="jumbotron bg-dark d-md-flex flex-md-column justify-content-md-center align-items-md-center" role="banner">
+    <header id="landioCarousel" class="carousel slide carousel-header jumbotron" data-ride="carousel" data-interval="0" role="banner">
+      <ol class="carousel-indicators flex-md-column mb-4 m-md-0">
+        <li data-target="#landioCarousel" data-slide-to="0" class="active"><span class="carousel-dot"></span></li>
+        <li data-target="#landioCarousel" data-slide-to="1"><span class="carousel-dot"></span></li>
+        <li data-target="#landioCarousel" data-slide-to="2"><span class="carousel-dot"></span></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item  active" style="background-image: url(./assets/img/ecole2.png);">
+          <div class="carousel-caption d-flex justify-content-center">
+            <div class="align-self-center">
+            <h1 class="display-3">l'ecole à la maison.</h1>
+            <h2 class="mb-5 hidden-sm-down"><em>Concrètement,</em>  comment faire ?</h2>
+            <a class="btn btn-outline-light btn-lg btn-outline-light mb-4 mb-md-0" href="#" role="button">Espace professeurs</a>
+            <a class="btn btn-outline-light btn-lg btn-outline-light mb-4 mb-md-0" href="#" role="button">Espace parents</a>
 
-      <div class="text-center">
-        <h1 class="display-3">Land.io, blissful innovation.</h1>
-        <h2 class="mb-5">Craft your journey, <em>absolutely free</em>, with <a href="ui-elements.html" class="jumbolink">Land.io UI kit</a>.</h2>
-        <a class="btn btn-outline-light btn-lg btn-outline-light mb-4 mb-md-0" href="http://tympanus.net/codrops/?p=25217" role="button"><span class="icon-sketch"></span>Sketch included</a>
+          </div>
+          </div>
+        </div>
+        <div class="carousel-item bg-dark" style="background-image: url(./assets/img/ecole.jpeg);">
+          <div class="carousel-caption d-flex justify-content-center">
+            <div class="align-self-center">
+            <h1 class="display-3">Comment bien réussir.</h1>
+            <h2 class="mb-5 hidden-sm-down"><strong>Faut-il suivre le programme scolaire ?</strong></h2>
+<a class="btn btn-outline-light btn-lg btn-outline-light mb-4 mb-md-0" href="#" role="button">Espace professeurs</a>
+            <a class="btn btn-outline-light btn-lg btn-outline-light mb-4 mb-md-0" href="#" role="button">Espace parents</a>            </div>
+          </div>
+        </div>
+        <div class="carousel-item bg-dark" style="background-image: url(./assets/img/ecole3.png);">
+          <div class="carousel-caption d-flex justify-content-center">
+            <div class="align-self-center">
+            <h1 class="display-3">bonnes méthodes & astuces.</h1>
+            <h2 class="mb-5 hidden-sm-down">Et les examens, <em>COMMENT?</em></h2>
+            <a class="btn btn-outline-light btn-lg btn-outline-light mb-4 mb-md-0" href="#" role="button">Espace professeurs</a>
+            <a class="btn btn-outline-light btn-lg btn-outline-light mb-4 mb-md-0" href="#" role="button">Espace parents</a>            </div>
+          </div>
+        </div>
+        <ul class="nav social-share justify-content-center">
+          <li class="nav-item"><a class="nav-link" href="#"><span class="icon-twitter"></span> 1024</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><span class="icon-facebook"></span> 562</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><span class="icon-linkedin"></span> 356</a></li>
+        </ul>
       </div>
-
-
-      <ul class="nav social-share justify-content-center">
-        <li class="nav-item"><a class="nav-link" href="#"><span class="icon-twitter"></span> 1024</a></li>
-        <li class="nav-item"><a class="nav-link" href="#"><span class="icon-facebook"></span> 562</a></li>
-        <li class="nav-item"><a class="nav-link" href="#"><span class="icon-linkedin"></span> 356</a></li>
-      </ul>
     </header>
 
 
@@ -144,33 +173,20 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <span class="icon-pen display-4"></span>
-                <h4 class="card-title">250</h4>
-                <h6 class="card-subtitle text-muted">UI Elements</h6>
-                <p class="card-text">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras eu adipiscing ac cras at sem cras per senectus eu parturient quam.</p>
-              </div>
+            <div id="prg1" class="round-progress h-box">
+              <div></div>
             </div>
+            
           </div>
           <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <span class="icon-thunderbolt display-4"></span>
-                <h4 class="card-title">Ultra</h4>
-                <h6 class="card-subtitle text-muted">Modern design</h6>
-                <p class="card-text">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras eu adipiscing ac cras at sem cras per senectus eu parturient quam.</p>
-              </div>
+            <div id="prg2" class="round-progress green h-box">
+              <div></div>
             </div>
+            
           </div>
           <div class="col-md-4">
-            <div class="card mb-0">
-              <div class="card-body">
-                <span class="icon-heart display-4"></span>
-                <h4 class="card-title">Free</h4>
-                <h6 class="card-subtitle text-muted">Forever and ever</h6>
-                <p class="card-text">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras eu adipiscing ac cras at sem cras per senectus eu parturient quam.</p>
-              </div>
+            <div id="prg3" class="round-progress blue h-box">
+              <div></div>
             </div>
           </div>
         </div>
@@ -454,9 +470,9 @@
       </div>
     </footer>
 
+    <script src="./assets/js/myscript.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="./assets/js/landio.min.js"></script>
   </body>
 </html>
-
